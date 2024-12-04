@@ -1,0 +1,196 @@
+<link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel=stylesheet>
+<div class="cardm">
+  <div class="card">
+    <svg class="weather" version="1.1" id="Layer_1" xmlns="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve">  <image id="image0" width="100" height="100" x="0" y="0" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"></image>
+    </svg>
+    <div class="main">20 °C</div>
+    <div class="mainsub">Nashik, Maharashtra, India</div>
+
+  </div>
+
+  <div class="card2">
+    <div class="upper">
+      <div class="humidity">
+        <div class="humiditytext">Humidity<br>20%</div>
+        <svg xml:space="preserve" viewBox="0 0 30 30" height="30px" width="30px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" class="humiditysvg">  <image href="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" y="0" x="0" height="30" width="30" id="image0"></image>
+          </svg>
+      </div>
+
+      <div class="air">
+        <div class="airtext">Wind<br>3 Km/h</div>
+          <svg class="airsvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" xml:space="preserve">  <image id="image0" width="30" height="30" x="0" y="0" href="https://w7.pngwing.com/pngs/539/62/png-transparent-weather-forecasting-wind-computer-icons-wind-blue-text-cloud-thumbnail.png"></image>
+        </svg>
+      </div>
+    </div>
+
+    <div class="lower">
+      <div class="aqi">
+        <svg class="aqisvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">  <image id="image0" width="20" height="20" x="0" y="0" href="https://w7.pngwing.com/pngs/405/453/png-transparent-indoor-air-quality-air-pollution-air-purifiers-dust-computer-icons-fresh-air-angle-text-logo-thumbnail.png"></image>
+        </svg>
+        <div class="aqitext">AQI<br>25</div>
+      </div>
+
+      <div class="realtemp">
+        <svg class="rfsvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">  <image id="image0" width="20" height="20" x="0" y="0" href="https://banner2.cleanpng.com/20180810/ajh/kisspng-computer-icons-vector-graphics-incandescent-light-512-x-512-256-x-256-128-x-128-64-x-64-48-x-48-32-x-5b6db20c7f9687.3076627115339156605226.jpg"></image>
+        </svg>
+        <div class="realfeeltext">Real Temp<br>24 °C</div>
+      </div>
+
+      <div class="pressure">
+        <svg class="pressuresvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">  <image id="image0" width="20" height="20" x="0" y="0" href="https://banner2.cleanpng.com/20180424/lke/avepz9h20.webp"></image>
+        </svg>
+        <div class="pressuretext">Pressure<br>980 mbar</div>
+      </div>
+      <div class="card3">
+      Healthy
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+     <i class="fa fa-exclamation" style="color:red;"></i> All the images are taken from Google and I do not own any of them</a>
+    </footer>
+<head>
+<style>
+</head>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+body
+{
+  font-family: 'Nunito', sans-serif;
+}
+.cardm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 46.64%;
+  left: 50%;
+}
+
+.card {
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: aba3a2;
+  color: black;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.weather {
+  position: relative;
+  margin: 1em;
+}
+
+.main {
+  font-size: 2em;
+  position: relative;
+  top: -3em;
+  left: 4.3em;
+}
+
+.mainsub {
+  position: relative;
+  top: -10.2em;
+  left: 14em;
+  font-size: 0.6em;
+}
+
+.card2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  height: 130px;
+  border-radius: 35px;
+  background: white;
+  z-index: -1;
+  transition: .4s ease-in-out;
+}
+
+.card:hover {
+  background-color: #F7da57;
+  cursor: pointer;
+}
+
+.card:hover + .card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card:hover + .card2 .lower {
+  top: 20.2em;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: black;
+  left: 1.8em;
+  top: 0.5em;
+  gap: 4em;
+}
+
+.humiditytext {
+  position: relative;
+  left: 3.6em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.airtext {
+  position: relative;
+  left: 3.8em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  text-align: center;
+  color: black;
+  left: 3em;
+  top: 1em;
+  margin-top: 0.7em;
+  font-size: 0.7em;
+  transition: .4s ease-in-out;
+}
+
+.aqi {
+  margin-right: 3.25em;
+}
+
+.realfeel {
+  margin-right: 1.8em;
+}
+
+.card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -2.4em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #1cb01f;
+  transition: .4s ease-in-out;
+}
+footer {
+  margin-top: 20px;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}   
+</style>
